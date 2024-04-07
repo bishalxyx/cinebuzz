@@ -11,7 +11,7 @@ export const Upcoming = () => {
   }
   console.log(movieList);
   movieList.map(movie=>console.log(movie.poster_path))
-  useEffect(()=>getmovie,[])
+  useEffect(()=>getmovie(),[])
   return (
     <div className='bg-slate-500 flex flex-wrap justify-center dark:bg-gray-800'>
     { movieList.map(movie=> <div key={movie.id} className=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4">
