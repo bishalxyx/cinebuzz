@@ -38,13 +38,13 @@ export const Bag = () => {
       </div></div>) : <div className='dark:bg-gray-800 dark:border-gray-700'>
         <h1 className='text-3xl font-bold p-4 dark:text-white'>Shopping Cart</h1>
         <p className='text-lg font-normal p-4 dark:text-white'>{finalItem.length} Movies in your Cart</p>
-        <center className="border-inherit border-2 p-32   flex justify-center flex-col   ">
+        <center className="border-inherit border-2 p-8   flex justify-center flex-col   ">
           <div className='imageWidth'>
             <img src={Logo} alt="" />
           </div>
-          <div>
-            <p className="dark:text-white p-4">Your cart is empty. Keep shopping to find a course!</p>
-          </div>
+          <span>
+            <p className="dark:text-white ">Your cart is empty.</p>
+          </span>
           <div className='p-4'>
             <button type="button" className="dark:text-white focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Keep Shopping</button>
           </div>

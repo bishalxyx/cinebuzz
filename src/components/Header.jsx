@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
 import { Link, NavLink } from 'react-router-dom';
+import Logo from '../assets/logo.png'
 
 export const Header = () => {
   const active="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500";
@@ -26,7 +27,7 @@ export const Header = () => {
     <nav className="bg-slate-700 border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
+          <img src={Logo} className="h-8" alt="Flowbite Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CineBuzz</span>
       </Link>
       <div className="flex md:order-2 ">
