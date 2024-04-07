@@ -12,7 +12,7 @@ export const Data = () => {
     }
     // console.log(movieList);
     // movieList.map(movie=>console.log(movie.poster_path))
-    useEffect(()=>getmovie,[])
+    useEffect(()=>getmovie(),[])
     // console.log(noItem);
   return (
     <div>

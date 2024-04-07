@@ -1,4 +1,5 @@
 import React from 'react'
+import { Data } from './Data';
 import { MdDelete } from "react-icons/md";
 import movieStore from '../store';
 import Logo from '../assets/empty-cart.jpg'
