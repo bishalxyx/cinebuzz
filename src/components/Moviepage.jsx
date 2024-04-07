@@ -10,7 +10,7 @@ export const Moviepage = () => {
             .then(response => setmovieList(response))
             .catch(err => console.error(err));
     }
-    useEffect(() => getmovie, [])
+    useEffect(() => getmovie(), [param.id])
     console.log(movieList);
     const gen = movieList.genres;
     return (
