@@ -10,7 +10,7 @@ export const Bag = () => {
   // console.log(movie[0].id);
   const bagItem = useSelector(state => state.bag);
   const dispatch = useDispatch();
-  console.log(bagItem.length == 0);
+  // console.log(bagItem.length == 0);
   const finalItem = movie.filter(movie => {
     const itemIndex = bagItem.indexOf(movie.id);
     return itemIndex >= 0;
@@ -18,11 +18,12 @@ export const Bag = () => {
   const handleClick=(id)=>{
      dispatch(bagActions.remove(id));
   }
-  finalItem.map(movie => console.log(movie.title));
+  // finalItem.map(movie => console.log(movie.title));
   return (
 
     <div className='bg-slate-500 dark:bg-gray-800 dark:border-gray-700'>
-      {!bagItem.length == 0 ? finalItem.map(movie => <div className='p-4' key={movie.id}><Link to={`/movie/${movie.id}`} className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+      {!bagItem.length == 0 ? finalItem.map(movie => <div className='p-4' key={movie.id}><div  className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        
         <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={`https://image.tmdb.org/t/p/w500${movie.poster_path
           }`} alt="" />
         <div className="flex flex-col justify-between p-4 leading-normal">
@@ -33,7 +34,7 @@ export const Bag = () => {
           <div><span className='text-emerald-500 mt-24 text-2xl font-semibold antialiased hover:subpixel-antialiased  '>Free</span></div>
         </div>
 
-      </Link></div>) : <div className='dark:bg-gray-800 dark:border-gray-700'>
+      </div></div>) : <div className='dark:bg-gray-800 dark:border-gray-700'>
         <h1 className='text-3xl font-bold p-4 dark:text-white'>Shopping Cart</h1>
         <p className='text-lg font-normal p-4 dark:text-white'>{finalItem.length} Movies in your Cart</p>
         <center className="border-inherit border-2 p-32   flex justify-center flex-col   ">
