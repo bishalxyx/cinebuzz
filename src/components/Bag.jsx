@@ -1,6 +1,6 @@
 import React from 'react'
 import { MdDelete } from "react-icons/md";
-
+import movieStore from '../store';
 import Logo from '../assets/empty-cart.jpg'
 import { useSelector,useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom';
