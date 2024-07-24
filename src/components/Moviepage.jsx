@@ -42,15 +42,15 @@ export const Moviepage = () => {
                     </p>
                     <p className='my-4'>
                         <span className='mr-2 font-bold text-black'>Budget</span>
-                        <span className='text-black'>{movieList.budget} min</span>
+                        <span className='text-black'>{movieList.budget} </span>
                     </p>
                     <p className='my-4'>
                         <span className='mr-2 font-bold text-black'>Revenue</span>
-                        <span className='text-black'>{movieList.revenue} min</span>
+                        <span className='text-black'>{movieList.revenue} </span>
                     </p>
                     <p className='my-4'>
                         <span className='mr-2 font-bold text-black'>Release Date</span>
-                        <span className='text-black'>{movieList.release_date} min</span>
+                        <span className='text-black'>{movieList.release_date} </span>
                     </p>
 
                 </div>
